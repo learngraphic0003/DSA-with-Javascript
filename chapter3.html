@@ -117,10 +117,7 @@
   //   }
   // }
 
-
-
   // strong number
-
 
   let n = Number(prompt(" enter number "));
 
@@ -128,26 +125,28 @@
     console.log("plese enter right number");
   } else {
     if (n > 0) {
-    var rem = n%10;
-    var fact = 1 ;
-    for ( var i = 1 ; i<= rem; i++)
-    {
-      fact = fact*i;
-    }
-    sum = sum+ fact;
-    n = Math.floor(n/10);
-    
+
+      var sum = 0;
+      var copy = n ;
+      while (n>0) {
+        var rem = n%10;
+        var fact = 1 ;
+        for ( var i = 1 ;  i <= rem; i++) {
+          fact = fact*i;
+        }
+        sum = sum+fact;
+        n = Math.floor(n/10);
+      }
+      if ( copy === sum ) {
+        console.log("strong")
+      }
+      else {
+        console.log("not strong")
+      }
 
 
-     
-
-     
     } else {
       console.log("plese enter posative number");
     }
   }
-
-
-
-
 </script>
