@@ -53,13 +53,58 @@ let N = Number(prompt("enter the number"))
 // }
 
 
-    for( i = 1 ; i <= N ;i++){
-        let ascii = 65
-     for(j = 1; j <= i ;j++ )
+
+
+
+
+//     for( i = 1 ; i <= N ;i++){
+//         let ascii = 65
+//      for(j = 1; j <= i ;j++ )
+
+//      {
+//         process.stdout.write (String.fromCharCode(ascii)+" " )  
+//         ascii++ 
+//      }
+//      console.log()
+// }
+
+
+ 
+
+
+
+// for( i = 1 ; i <= N ;i++){
+      
+//     //  for(j = 1; j <= N-i+1 ;j++ )
+//      for(j = N ; j >= i ;j-- )
+
+//      {
+//         process.stdout.write (" * " )  
+        
+//      }
+
+  
+//      console.log()
+// }
+
+
+
+
+for( i = 1 ; i <= N ;i++){
+      
+    
+     for(j = 1 ; j <= N-i ;j++ )
 
      {
-        process.stdout.write (String.fromCharCode(ascii)+" " )  
-        ascii++ 
+        process.stdout.write (" " )  
+        
      }
+
+     for (let j =1; j<=i;j++ ){
+
+          process.stdout.write ("*" )  
+     }
+
+  
      console.log()
 }
